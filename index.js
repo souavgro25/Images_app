@@ -44,7 +44,7 @@ function data() {
     .then((res) => res.json())
     .then((data) => {
       data.map((data) => {
-        out += `<div class="item">
+        out += `<div onclick="show()" class="item">
        <img src=${data.urls.thumb}/>
       </div>`;
       });
@@ -64,6 +64,11 @@ function inscroll() {
     }, 2000);
     data();
   }
+}
+
+function show (){
+  console.log("clicked")
+   document.querySelector(".preview").classList.add("show")
 }
 
 data();

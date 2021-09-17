@@ -66,6 +66,18 @@ img {
   height: 20rem;
 }
 
+.preview{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
 @media only screen and (max-width: 600px) {
   .wrapper {
     display: flex;
